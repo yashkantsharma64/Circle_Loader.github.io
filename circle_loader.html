@@ -1,0 +1,599 @@
+                                                
+                                                <!-- this script is provided by http://www.htmlbestcodes.com coded by: Kerixa Inc. -->
+                                                <!DOCTYPE html>
+
+                                                <html lang="en">
+                                                
+                                                <head>
+                                                
+                                                
+                                                
+                                                    <meta charset="UTF-8">
+                                                
+                                                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                                                
+                                                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                                
+                                                    <title>Fading Trailer Circle Spinner Loader</title>
+                                                
+                                                
+                                                
+                                                <!-- font awesome library include 4.7 -->
+                                                
+                                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                                                
+                                                
+                                                
+                                                <!-- css styles -->
+                                                
+                                                <style>
+                                                
+                                                
+                                                
+                                                .loader2-spinner-container, .loader2-spinner-container > * {
+                                                
+                                                  border-radius: 100%;
+                                                
+                                                  position: absolute;
+                                                
+                                                  top: 50%;
+                                                
+                                                  left: 50%;
+                                                
+                                                  z-index: 2000;
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                /*
+                                                
+                                                
+                                                
+                                                For tints, calculate (255 - previous value), multiply that
+                                                
+                                                by 1/4, 1/2, 3/4, etc. (the greater the factor, the lighter the tint),
+                                                
+                                                and add that to the previous value (assuming each.component is a
+                                                
+                                                8-bit integer).
+                                                
+                                                */
+                                                
+                                                /* line 2, ../../../../loaders/scss/partials/_container.scss */
+                                                
+                                                .loader-container {
+                                                
+                                                  position: fixed;
+                                                
+                                                  width: 100%;
+                                                
+                                                  height: 100%;
+                                                
+                                                  top: 0;
+                                                
+                                                  z-index: 1000;
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                /* line 1, ../../../../loaders/scss/partials/_force-gpu.scss */
+                                                
+                                                .force-gpu {
+                                                
+                                                  -webkit-transform: translateZ(0);
+                                                
+                                                  -moz-transform: translateZ(0);
+                                                
+                                                  -ms-transform: translateZ(0);
+                                                
+                                                  -o-transform: translateZ(0);
+                                                
+                                                  transform: translateZ(0);
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                /******************************** Config ********************************/
+                                                
+                                                /* line 6, ../../../../loaders/scss/loaders/_spinner2.scss */
+                                                
+                                                .loader2-spinner-container {
+                                                
+                                                  animation: loader2-spinner-spin 0.5s linear infinite;
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                /* line 14, ../../../../loaders/scss/loaders/_spinner2.scss */
+                                                
+                                                .loader2-spinner-container > * {
+                                                
+                                                  width: 10px;
+                                                
+                                                  height: 10px;
+                                                
+                                                  margin: -5px 0px 0px -5px;
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                /* line 10, ../../../../loaders/scss/modules/mixins/_spinner2_mixin.scss */
+                                                
+                                                .loader2-spinner-container > *:nth-of-type(1) {
+                                                
+                                                  width: 10px;
+                                                
+                                                  height: 10px;
+                                                
+                                                  transform: rotate(30deg) translate(50px) rotate(-30deg);
+                                                
+                                                  background: rgba(20, 88, 131, 0.08);
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                /* line 10, ../../../../loaders/scss/modules/mixins/_spinner2_mixin.scss */
+                                                
+                                                .loader2-spinner-container > *:nth-of-type(2) {
+                                                
+                                                  width: 10px;
+                                                
+                                                  height: 10px;
+                                                
+                                                  transform: rotate(60deg) translate(50px) rotate(-60deg);
+                                                
+                                                  background: rgba(43, 105, 143, 0.17);
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                /* line 10, ../../../../loaders/scss/modules/mixins/_spinner2_mixin.scss */
+                                                
+                                                .loader2-spinner-container > *:nth-of-type(3) {
+                                                
+                                                  width: 10px;
+                                                
+                                                  height: 10px;
+                                                
+                                                  transform: rotate(90deg) translate(50px) rotate(-90deg);
+                                                
+                                                  background: rgba(64, 119, 154, 0.25);
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                /* line 10, ../../../../loaders/scss/modules/mixins/_spinner2_mixin.scss */
+                                                
+                                                .loader2-spinner-container > *:nth-of-type(4) {
+                                                
+                                                  width: 10px;
+                                                
+                                                  height: 10px;
+                                                
+                                                  transform: rotate(120deg) translate(50px) rotate(-120deg);
+                                                
+                                                  background: rgba(84, 134, 165, 0.33);
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                /* line 10, ../../../../loaders/scss/modules/mixins/_spinner2_mixin.scss */
+                                                
+                                                .loader2-spinner-container > *:nth-of-type(5) {
+                                                
+                                                  width: 10px;
+                                                
+                                                  height: 10px;
+                                                
+                                                  transform: rotate(150deg) translate(50px) rotate(-150deg);
+                                                
+                                                  background: rgba(107, 150, 177, 0.42);
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                /* line 10, ../../../../loaders/scss/modules/mixins/_spinner2_mixin.scss */
+                                                
+                                                .loader2-spinner-container > *:nth-of-type(6) {
+                                                
+                                                  width: 10px;
+                                                
+                                                  height: 10px;
+                                                
+                                                  transform: rotate(180deg) translate(50px) rotate(-180deg);
+                                                
+                                                  background: rgba(128, 165, 188, 0.5);
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                /* line 10, ../../../../loaders/scss/modules/mixins/_spinner2_mixin.scss */
+                                                
+                                                .loader2-spinner-container > *:nth-of-type(7) {
+                                                
+                                                  width: 10px;
+                                                
+                                                  height: 10px;
+                                                
+                                                  transform: rotate(210deg) translate(50px) rotate(-210deg);
+                                                
+                                                  background: rgba(148, 179, 198, 0.58);
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                /* line 10, ../../../../loaders/scss/modules/mixins/_spinner2_mixin.scss */
+                                                
+                                                .loader2-spinner-container > *:nth-of-type(8) {
+                                                
+                                                  width: 10px;
+                                                
+                                                  height: 10px;
+                                                
+                                                  transform: rotate(240deg) translate(50px) rotate(-240deg);
+                                                
+                                                  background: rgba(171, 195, 210, 0.67);
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                /* line 10, ../../../../loaders/scss/modules/mixins/_spinner2_mixin.scss */
+                                                
+                                                .loader2-spinner-container > *:nth-of-type(9) {
+                                                
+                                                  width: 10px;
+                                                
+                                                  height: 10px;
+                                                
+                                                  transform: rotate(270deg) translate(50px) rotate(-270deg);
+                                                
+                                                  background: rgba(191, 210, 221, 0.75);
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                /* line 10, ../../../../loaders/scss/modules/mixins/_spinner2_mixin.scss */
+                                                
+                                                .loader2-spinner-container > *:nth-of-type(10) {
+                                                
+                                                  width: 10px;
+                                                
+                                                  height: 10px;
+                                                
+                                                  transform: rotate(300deg) translate(50px) rotate(-300deg);
+                                                
+                                                  background: rgba(212, 224, 232, 0.83);
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                /* line 10, ../../../../loaders/scss/modules/mixins/_spinner2_mixin.scss */
+                                                
+                                                .loader2-spinner-container > *:nth-of-type(11) {
+                                                
+                                                  width: 10px;
+                                                
+                                                  height: 10px;
+                                                
+                                                  transform: rotate(330deg) translate(50px) rotate(-330deg);
+                                                
+                                                  background: rgba(235, 241, 244, 0.92);
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                /* line 10, ../../../../loaders/scss/modules/mixins/_spinner2_mixin.scss */
+                                                
+                                                .loader2-spinner-container > *:nth-of-type(12) {
+                                                
+                                                  width: 10px;
+                                                
+                                                  height: 10px;
+                                                
+                                                  transform: rotate(360deg) translate(50px) rotate(-360deg);
+                                                
+                                                  background: white;
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                /******************************** Animations ********************************/
+                                                
+                                                @-webkit-keyframes loader2-spinner-spin {
+                                                
+                                                  0% {
+                                                
+                                                    -webkit-transform: rotate(0deg);
+                                                
+                                                    -moz-transform: rotate(0deg);
+                                                
+                                                    -ms-transform: rotate(0deg);
+                                                
+                                                    -o-transform: rotate(0deg);
+                                                
+                                                    transform: rotate(0deg);
+                                                
+                                                  }
+                                                
+                                                  100% {
+                                                
+                                                    -webkit-transform: rotate(360deg);
+                                                
+                                                    -moz-transform: rotate(360deg);
+                                                
+                                                    -ms-transform: rotate(360deg);
+                                                
+                                                    -o-transform: rotate(360deg);
+                                                
+                                                    transform: rotate(360deg);
+                                                
+                                                  }
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                @-moz-keyframes loader2-spinner-spin {
+                                                
+                                                  0% {
+                                                
+                                                    -webkit-transform: rotate(0deg);
+                                                
+                                                    -moz-transform: rotate(0deg);
+                                                
+                                                    -ms-transform: rotate(0deg);
+                                                
+                                                    -o-transform: rotate(0deg);
+                                                
+                                                    transform: rotate(0deg);
+                                                
+                                                  }
+                                                
+                                                  100% {
+                                                
+                                                    -webkit-transform: rotate(360deg);
+                                                
+                                                    -moz-transform: rotate(360deg);
+                                                
+                                                    -ms-transform: rotate(360deg);
+                                                
+                                                    -o-transform: rotate(360deg);
+                                                
+                                                    transform: rotate(360deg);
+                                                
+                                                  }
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                @-ms-keyframes loader2-spinner-spin {
+                                                
+                                                  /* line 42, ../../../../loaders/scss/loaders/_spinner2.scss */
+                                                
+                                                  0% {
+                                                
+                                                    -webkit-transform: rotate(0deg);
+                                                
+                                                    -moz-transform: rotate(0deg);
+                                                
+                                                    -ms-transform: rotate(0deg);
+                                                
+                                                    -o-transform: rotate(0deg);
+                                                
+                                                    transform: rotate(0deg);
+                                                
+                                                  }
+                                                
+                                                  /* line 46, ../../../../loaders/scss/loaders/_spinner2.scss */
+                                                
+                                                  100% {
+                                                
+                                                    -webkit-transform: rotate(360deg);
+                                                
+                                                    -moz-transform: rotate(360deg);
+                                                
+                                                    -ms-transform: rotate(360deg);
+                                                
+                                                    -o-transform: rotate(360deg);
+                                                
+                                                    transform: rotate(360deg);
+                                                
+                                                  }
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                @-o-keyframes loader2-spinner-spin {
+                                                
+                                                  0% {
+                                                
+                                                    -webkit-transform: rotate(0deg);
+                                                
+                                                    -moz-transform: rotate(0deg);
+                                                
+                                                    -ms-transform: rotate(0deg);
+                                                
+                                                    -o-transform: rotate(0deg);
+                                                
+                                                    transform: rotate(0deg);
+                                                
+                                                  }
+                                                
+                                                  100% {
+                                                
+                                                    -webkit-transform: rotate(360deg);
+                                                
+                                                    -moz-transform: rotate(360deg);
+                                                
+                                                    -ms-transform: rotate(360deg);
+                                                
+                                                    -o-transform: rotate(360deg);
+                                                
+                                                    transform: rotate(360deg);
+                                                
+                                                  }
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                @keyframes loader2-spinner-spin {
+                                                
+                                                  0% {
+                                                
+                                                    -webkit-transform: rotate(0deg);
+                                                
+                                                    -moz-transform: rotate(0deg);
+                                                
+                                                    -ms-transform: rotate(0deg);
+                                                
+                                                    -o-transform: rotate(0deg);
+                                                
+                                                    transform: rotate(0deg);
+                                                
+                                                  }
+                                                
+                                                  100% {
+                                                
+                                                    -webkit-transform: rotate(360deg);
+                                                
+                                                    -moz-transform: rotate(360deg);
+                                                
+                                                    -ms-transform: rotate(360deg);
+                                                
+                                                    -o-transform: rotate(360deg);
+                                                
+                                                    transform: rotate(360deg);
+                                                
+                                                  }
+                                                
+                                                }
+                                                
+                                                
+                                                
+                                                body{
+                                                    text-align: center;
+                                                }
+                                                body
+                                                a{
+                                                    color: white;
+                                                }
+                                                a:hover, a:visited{
+                                                    color: orange;
+                                                }
+                                                .loader-container{
+                                                    margin-top: 2rem;
+                                                }
+                                                </style>
+                                                
+                                                </head>
+                                                
+                                                
+                                                
+                                                <!--  style="background-color:#1D4A6B"-->
+                                                
+                                                <body  style="background-color:#1D4A6B">
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                  <!-- Loader 2 -->
+                                                
+                                                  <div class = "loader-container force-gpu">
+                                                
+                                                
+                                                
+                                                    <div class="loader2-spinner-container">
+                                                
+                                                
+                                                
+                                                      <div></div>
+                                                
+                                                      <div></div>
+                                                
+                                                      <div></div>
+                                                
+                                                      <div></div>
+                                                
+                                                
+                                                
+                                                      <div></div>
+                                                
+                                                      <div></div>
+                                                
+                                                      <div></div>
+                                                
+                                                      <div></div>
+                                                
+                                                
+                                                
+                                                      <div></div>
+                                                
+                                                      <div></div>
+                                                
+                                                      <div></div>
+                                                
+                                                      <div></div>
+                                                
+                                                
+                                                
+                                                    </div>
+                                                
+                                                
+                                                
+                                                  </div>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                <script>
+                                                
+                                                
+                                                
+                                                /*   
+                                                
+                                                
+                                                
+                                                Tutorial Description
+                                                
+                                                
+                                                
+                                                Circles, with a fading trail rotating around a circular path loader animation done with css used for preloading while web content is being downloaded.
+                                                
+                                                
+                                                
+                                                */
+                                                
+                                                
+                                                
+                                                </script>
+                                                
+                                                </body>
+                                                
+                                                </html><a target='_blank' href='http://www.htmlbestcodes.com' style='font-size: 8pt; text-decoration: none'>Html Best Codes</a>                                                
+                                                                                            
